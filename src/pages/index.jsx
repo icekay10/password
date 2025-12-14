@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './HomePage.module.css';
+import styles from './Homepage.module.css';
 
 // SEO Metadata (Next.js App Router)
 export const metadata = {
@@ -7,7 +7,17 @@ export const metadata = {
   description:
     'Generate ultra-secure passwords in seconds with our free, privacy-focused password generator. Military-grade security, zero data storage, and local browser generation for maximum protection.',
   keywords:
-    'password generator, secure password, strong password, random password generator, password creator, online security, digital privacy, cybersecurity tool, free password tool, encrypted passwords',
+    // Single keywords
+    'password, generator, security, privacy, encryption, cybersecurity, secure, tool, free, online, random, strong, create, maker, manager, protection, safe, digital, account, login, '
+    +
+    // Double keywords
+    'password generator, password creator, password manager, secure password, strong password, random password, password security, password tool, online password, free password, password protection, password strength, password complexity, password length, password requirements, password policy, password safety, digital security, account security, login security, '
+    +
+    // Treble (Triple) keywords
+    'free password generator, online password generator, secure password generator, random password generator, strong password generator, password generator tool, password generator online, password generator free, password generator secure, password generator random, create secure password, generate strong password, make random password, password security tool, digital privacy tool, cybersecurity password tool, account password generator, login password creator, password strength checker, password complexity analyzer, '
+    +
+    // Long-tail keywords
+    'free online password generator, secure random password generator, create strong password online, generate secure passwords free, best password generator 2024, military grade password generator, password generator no storage, local browser password generator, privacy focused password tool, zero data storage password generator, cryptographically secure password generator, password generator for online accounts, strong password creator for websites, random password maker for security, password generator with custom options, password length and complexity tool, generate passwords offline browser, secure password generator for free, trusted password generation tool, password security best practices tool',
   authors: [{ name: 'SecurePassword Tools' }],
   robots: 'index, follow',
   openGraph: {
@@ -71,6 +81,7 @@ const Homepage = () => {
               ratingValue: '4.9',
               reviewCount: '1842',
             },
+            keywords: 'password generator, secure password, strong password, random password, free online tool, cybersecurity, digital privacy, password security, password creator, password manager',
             featureList:
               'Military-grade encryption, Zero data storage, Local browser generation, Customizable password options, Cross-platform compatibility, Free to use',
           }),

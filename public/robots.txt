@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://www.vaultpassgenerator.com
+
+# Sitemaps
+Sitemap: https://www.vaultpassgenerator.com/sitemap.xml

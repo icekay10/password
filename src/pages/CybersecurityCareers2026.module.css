@@ -1,0 +1,1005 @@
+/* Main Container */
+.container {
+  padding: 4rem 1.5rem 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #111827;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+/* Card Layout */
+.card {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.02);
+  padding: 2.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Title Styling */
+.title {
+  font-size: clamp(1.875rem, 5vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: #1e293b;
+  text-align: center;
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: clamp(1.125rem, 3.5vw, 1.25rem);
+  font-weight: 500;
+  color: #4b5563;
+  margin: 0 0 2.5rem;
+  text-align: center;
+  line-height: 1.4;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Section Styling */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: clamp(1.375rem, 4vw, 1.625rem);
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+  line-height: 1.3;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+}
+
+.subSectionTitle {
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
+  font-weight: 600;
+  color: #374151;
+  margin: 1.5rem 0 1rem;
+}
+
+.paragraph {
+  font-size: clamp(0.9375rem, 2.8vw, 1.0625rem);
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+.paragraph strong {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* Statistics Grid */
+.statisticsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.statItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.statNumber {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1e40af;
+  line-height: 1;
+  margin: 0;
+}
+
+.statLabel {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Certifications Tier */
+.certificationsTier {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.tier {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tier:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.tierHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(90deg, #eff6ff, #ffffff);
+  border-bottom: 1px solid #dbeafe;
+}
+
+.tierBadge {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.tierTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+}
+
+.tierContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certification {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.certIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.certDetails {
+  flex: 1;
+}
+
+.certName {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.certDesc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 0 1rem;
+}
+
+.certStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.certStats .stat {
+  font-size: 0.875rem;
+  color: #4b5563;
+  background: #f3f4f6;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+}
+
+/* Roles Grid */
+.rolesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.roleCard {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.roleCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.roleHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, #eff6ff, #ffffff);
+  border-bottom: 1px solid #dbeafe;
+}
+
+.roleIcon {
+  font-size: 1.75rem;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+}
+
+.roleInfo {
+  flex: 1;
+}
+
+.roleTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+}
+
+.roleMeta {
+  display: flex;
+  gap: 1rem;
+}
+
+.roleSalary {
+  font-size: 0.875rem;
+  color: #1e40af;
+  font-weight: 600;
+  background: #eff6ff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+}
+
+.roleDemand {
+  font-size: 0.875rem;
+  color: #059669;
+  font-weight: 600;
+  background: #d1fae5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+}
+
+.roleContent {
+  padding: 1.5rem;
+}
+
+.roleDesc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 0 1.5rem;
+}
+
+.roleSkills {
+  margin-top: 1.5rem;
+}
+
+.skillsTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.75rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillsList span {
+  font-size: 0.875rem;
+  color: #4b5563;
+  background: #f3f4f6;
+  padding: 0.375rem 0.75rem;
+  border-radius: 2rem;
+}
+
+/* Additional Roles */
+.additionalRoles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.miniRole {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.miniRole:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.miniIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.miniContent {
+  flex: 1;
+}
+
+.miniTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.miniContent p {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Salary Regions */
+.salaryRegions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.region {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.region:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.regionHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(90deg, #eff6ff, #ffffff);
+  border-bottom: 1px solid #dbeafe;
+}
+
+.regionFlag {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.regionTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+}
+
+.regionContent {
+  padding: 1.5rem;
+}
+
+.salaryLevel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.salaryLevel:last-child {
+  border-bottom: none;
+}
+
+.level {
+  font-size: 0.9375rem;
+  color: #4b5563;
+}
+
+.amount {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.regionStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.regionStats .statItem {
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.regionStats .statNumber {
+  font-size: 1.25rem;
+}
+
+/* Specializations */
+.specializations {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.specialty {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.specialty:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.specialtyHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.specialtyIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+}
+
+.specialtyTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.specialtySalary {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0 0 0.5rem;
+}
+
+.specialtyDesc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Pathways */
+.pathways {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.pathway {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.pathway:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.pathwayHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.pathwayNumber {
+  background: #3b82f6;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.pathwayTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.pathwayContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.careerStep {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.careerStep:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 2.5rem;
+  bottom: -1.5rem;
+  width: 2px;
+  background: #dbeafe;
+  z-index: 1;
+}
+
+.stepDot {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #eff6ff;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+  padding-top: 0.25rem;
+}
+
+.stepTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.stepContent p {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Career Advice */
+.careerAdvice {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border: 2px solid #93c5fd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.careerAdvice:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.adviceTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.adviceText {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.adviceList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.adviceItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.adviceIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.adviceContent {
+  flex: 1;
+}
+
+.adviceItemTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.adviceContent p {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Future Outlook */
+.futureOutlook {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border: 2px solid #93c5fd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.futureOutlook:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.outlookTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.outlookText {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.keyTakeaways {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.takeaway {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  border: 1px solid #dbeafe;
+}
+
+.takeawayCheck {
+  background: #3b82f6;
+  color: white;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.takeaway span {
+  font-size: 0.9375rem;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .container {
+    padding: 5rem 2rem 4rem;
+  }
+  
+  .card {
+    padding: 3rem;
+  }
+  
+  .statisticsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .additionalRoles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .specializations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .adviceList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .keyTakeaways {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .paragraph {
+    font-size: 1.125rem;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
+  }
+  
+  .rolesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .salaryRegions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .pathways {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 6rem 2rem 5rem;
+  }
+  
+  .card {
+    padding: 4rem;
+  }
+  
+  .additionalRoles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .specializations {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .content {
+    gap: 3rem;
+  }
+  
+  .section {
+    gap: 1.5rem;
+  }
+  
+  .certification {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .statisticsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .container {
+    padding: 7rem 3rem 6rem;
+  }
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .container {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .statisticsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .statItem {
+    padding: 1rem;
+  }
+  
+  .statNumber {
+    font-size: 1.5rem;
+  }
+  
+  .roleIcon,
+  .certIcon,
+  .miniIcon,
+  .specialtyIcon,
+  .adviceIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  
+  .careerAdvice,
+  .futureOutlook {
+    padding: 1.5rem;
+  }
+  
+  .tierHeader,
+  .roleHeader,
+  .regionHeader {
+    padding: 1rem 1.25rem;
+  }
+  
+  .certStats {
+    gap: 0.5rem;
+  }
+  
+  .certStats .stat {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .statisticsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .additionalRoles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .specializations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .adviceList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

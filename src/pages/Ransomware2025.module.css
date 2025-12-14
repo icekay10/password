@@ -1,0 +1,594 @@
+/* Main Container */
+.container {
+  padding: 4rem 1.5rem 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #111827;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+/* Card Layout */
+.card {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.02);
+  padding: 2.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Title Styling */
+.title {
+  font-size: clamp(1.875rem, 5vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: #1e293b;
+  text-align: center;
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: clamp(1.125rem, 3.5vw, 1.25rem);
+  font-weight: 500;
+  color: #4b5563;
+  margin: 0 0 2.5rem;
+  text-align: center;
+  line-height: 1.4;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Section Styling */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: clamp(1.375rem, 4vw, 1.625rem);
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+  line-height: 1.3;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+}
+
+.paragraph {
+  font-size: clamp(0.9375rem, 2.8vw, 1.0625rem);
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+.paragraph strong {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* Statistics Grid */
+.statisticsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.statItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.statNumber {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1e40af;
+  line-height: 1;
+  margin: 0;
+}
+
+.statLabel {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Variants Grid */
+.variantsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.variantItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.variantItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.variantHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.variantIcon {
+  font-size: 1.75rem;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.variantTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1f2937;
+}
+
+.variantDetails {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+.variantDetails p {
+  margin: 0.5rem 0;
+}
+
+.variantDetails strong {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* Practices Grid */
+.practicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.practiceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.practiceItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.practiceIcon {
+  font-size: 1.75rem;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.practiceTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1f2937;
+}
+
+/* Mini List */
+.miniList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.miniList li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.miniList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* List Styling */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.listItem {
+  font-size: clamp(0.9375rem, 2.8vw, 1rem);
+  line-height: 1.6;
+  color: #4b5563;
+  position: relative;
+  padding-left: 2rem;
+  padding: 0.75rem 0.75rem 0.75rem 2rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.listItem::before {
+  content: '⚠️';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.listItem strong {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* Case Studies */
+.caseStudy {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.caseStudy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.caseTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1rem;
+}
+
+.caseDetails {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.caseDetails p {
+  margin: 0.75rem 0;
+}
+
+.caseDetails strong {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* Recovery Steps */
+.recoverySteps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.stepNumber {
+  background: #3b82f6;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.stepContent p {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Takeaway Box */
+.takeawayBox {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border: 2px solid #93c5fd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.takeawayBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.takeawayTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .container {
+    padding: 5rem 2rem 4rem;
+  }
+  
+  .card {
+    padding: 3rem;
+  }
+  
+  .statisticsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .variantsGrid,
+  .practicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .miniList li {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .paragraph {
+    font-size: 1.125rem;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 6rem 2rem 5rem;
+  }
+  
+  .card {
+    padding: 4rem;
+  }
+  
+  .variantsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .practicesGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .content {
+    gap: 3rem;
+  }
+  
+  .section {
+    gap: 1.5rem;
+  }
+  
+  .caseStudy {
+    padding: 2rem;
+  }
+  
+  .recoverySteps {
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .variantsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .statisticsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .container {
+    padding: 7rem 3rem 6rem;
+  }
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .container {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .statisticsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .statItem {
+    padding: 1rem;
+  }
+  
+  .statNumber {
+    font-size: 1.5rem;
+  }
+  
+  .listItem,
+  .variantDetails,
+  .caseDetails {
+    font-size: 0.9375rem;
+  }
+  
+  .step {
+    padding: 1rem;
+  }
+  
+  .stepNumber {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  
+  .variantIcon,
+  .practiceIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .variantsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .practicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .statisticsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

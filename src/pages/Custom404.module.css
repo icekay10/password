@@ -1,0 +1,327 @@
+/* Self-contained, no global dependencies */
+.container {
+  padding: 4rem 1.5rem 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111827;
+  background-color: #ffffff;
+  min-height: calc(100vh - 70px); /* Account for fixed navbar height */
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(1.875rem, 6vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: #dc2626; /* Red color for error indication */
+  text-align: center;
+}
+
+.subtitle {
+  font-size: clamp(1.125rem, 4vw, 1.25rem);
+  font-weight: 500;
+  color: #374151;
+  margin: 0 0 2.5rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.375rem, 4.5vw, 1.5rem);
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+.paragraph {
+  font-size: clamp(0.9375rem, 3vw, 1rem);
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.primaryButton:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.primaryButton:active {
+  transform: translateY(0);
+}
+
+.secondaryButton {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.secondaryButton:hover {
+  background: #e5e7eb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.secondaryButton:active {
+  transform: translateY(0);
+}
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.listItem {
+  font-size: clamp(0.9375rem, 3vw, 1rem);
+  line-height: 1.6;
+  color: #374151;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.listItem::before {
+  content: '⚠️';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.875rem;
+}
+
+/* Features Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.featureItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.featureIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.featureTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1f2937;
+}
+
+.featureDesc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.featureLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s;
+}
+
+.featureLink:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Focus states for accessibility */
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible,
+.featureLink:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 640px) {
+  .actionButtons {
+    flex-direction: row;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    min-width: 180px;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .actionButtons {
+    gap: 1.5rem;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    padding: 1rem 2rem;
+    font-size: 1.0625rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 5rem 2rem 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .featuresGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+  
+  .card {
+    color: #f9fafb;
+  }
+  
+  .title {
+    color: #f87171; /* Lighter red for dark mode */
+  }
+  
+  .subtitle,
+  .paragraph,
+  .listItem {
+    color: #d1d5db;
+  }
+  
+  .sectionTitle {
+    color: #f3f4f6;
+  }
+  
+  .featureItem {
+    background: #1f2937;
+    border: 1px solid #374151;
+  }
+  
+  .featureTitle {
+    color: #f3f4f6;
+  }
+  
+  .featureDesc {
+    color: #9ca3af;
+  }
+  
+  .secondaryButton {
+    background: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+  }
+  
+  .secondaryButton:hover {
+    background: #4b5563;
+  }
+  
+  .featureLink {
+    color: #60a5fa;
+  }
+  
+  .featureLink:hover {
+    color: #93c5fd;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .featureItem,
+  .primaryButton,
+  .secondaryButton {
+    transition: none;
+  }
+  
+  .primaryButton:hover,
+  .secondaryButton:hover,
+  .featureItem:hover {
+    transform: none;
+  }
+}

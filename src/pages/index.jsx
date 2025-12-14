@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './Homepage.module.css';
+import styles from './HomePage.module.css';
 
 // SEO Metadata (Next.js App Router)
 export const metadata = {

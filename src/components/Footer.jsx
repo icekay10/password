@@ -34,7 +34,7 @@ const Footer = () => {
               <li><Link href="/contact" className={styles.footerLink}>📞 Contact</Link></li>
               <li><Link href="/privacy-policy" className={styles.footerLink}>🛡️ Privacy Policy</Link></li>
               <li><Link href="/ai-and-cybersecurity-the-double-edged-sword" className={styles.footerLink}>🤖 AI and Cybersecurity</Link></li>
-              <li><Link href="/ransomware-in-2025-evolving-threats-and-protection" className={styles.footerLink}>🔒  Ransomware in 2025</Link></li>
+              <li><Link href="/ransomware-in-2026-evolving-threats-and-protection" className={styles.footerLink}>🔒  Ransomware in 2026</Link></li>
               <li><Link href="/cloud-security-challenges-in-the-era-of-remote-work" className={styles.footerLink}>🌐 Cloud Security</Link></li>
               <li><Link href="/identity-and-access-management-iam-trends" className={styles.footerLink}>👥 Identity and Access Management</Link></li>  
                <li><Link href="/cybersecurity-for-critical-infrastructure" className={styles.footerLink}>📧 Cybersecurity for Critical Infrastructure</Link></li>

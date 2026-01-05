@@ -24,11 +24,6 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/ransomware-in-2026-evolving-threats-and-protection": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/ransomware-in-2026-evolving-threats-and-protection.js"
     ]
   },
   "ampFirstPages": []
